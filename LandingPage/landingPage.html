@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="reservation" href="#reservation">Reservation</a></li>
+        </ul>
+    </nav>
+    <div class="hero" id="home">
+        <h1>SoulSync Dance Academy</h1>
+        <div class="content">
+            <p>Welcome to SoulSync Dance Academy</p>
+            <h2>Where Every Step Finds Harmony</h2>
+            <p>At SoulSync, we believe dance is the language of the soul. Join us to discover the rhythm within and synchronize your steps with the beat of life.</p>
+        </div>
+    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>SoulSync Dance Academy was founded in 2010 with the mission to provide a nurturing environment for dancers of all levels. Our experienced instructors are dedicated to helping students discover their passion for dance, whether they are beginners or advanced performers.</p>
+        <p>We offer a variety of dance styles including ballet, hip-hop, contemporary, and more. Our state-of-the-art facilities and inclusive community ensure that every dancer feels welcome and supported.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, please don't hesitate to reach out to us. We're here to help you on your dance journey.</p>
+        <p>Email: soulsyncdanceacademy@gmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Dance St, Rhythm City, USA</p>
+        <p>Follow us on social media:</p>
+        <ul class="social-media">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </section>
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <p>Ready to join our dance academy? Reserve your spot in one of our classes today!</p>
+        <form action="submit_reservation.php" method="post">    
+        <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="ballet">Ballet</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="contemporary">Contemporary</option>
+                <option value="salsa">Salsa</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 SoulSync Dance Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
